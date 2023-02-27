@@ -1,0 +1,28 @@
+p {
+
+    color: rgb(203, 203, 11)
+}
+
+h1 {
+    color: rgba(37, 207, 245, 0.998)
+}
+
+h2 {
+    color: rgb(195, 195, 16)
+}
+
+body {
+    background-color: rgb(19, 69, 100);
+}
+
+.parrafo1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+myheader {
+    background-color: rgba(79, 103, 151, 0.265);
+}
+
+mydiv {
+    background-color: beige;
+}
