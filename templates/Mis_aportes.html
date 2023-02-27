@@ -5,58 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <title>Document</title>
   </head>
-  <nav class="w-full h-16 bg-slate-500 lg:flex p-4 justify-between">
-    <div class="w-auto h-auto">
-      <nav class="text-x1 bg-slate-700 text-white font-bold">LOGO</nav>
-    </div>
-    <div
-      class="w-auto h-auto bg-slate-700 justify-center items-center text-white font-bold"
-    >
-      <nav>NOMBRE</nav>
-    </div>
-    <div
-      class="w-auto h-auto bg-slate-700 justify-end items-end text-white font-bold"
-    >
-      <a href="hola amiguito">MI CUENTA</a>
-    </div>
-  </nav>
-  <body class="bg-amber-200">
-    <div class="w-80 h-80 lg:flex mx-auto">
-      <img
-        src="https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png"
-        alt="Foto de perfil"
-      />
-    </div>
-    <div class="flex justify-center">
-      <h1 class="font-bold">Profesor Jirafales</h1>
-    </div>
-    <div class="flex justify-center">
-      <p class="text-justify">
-        Descripcion del docente Ensenho en primaria y secundaria, tengo un 1.95
-        y los fin de semana me gustan las drogas.
-      </p>
-    </div>
-    <div class="flex justify-center space-x-20">
-      <div>
+  <body class="bg-slate-100">
+    <header>
+      <nav class="w-full h-16 bg-sky-700 lg:flex p-4 justify-between">
+        <div class="w-auto h-auto">
+          <nav class="text-x1 bg-slate-700 text-white font-bold">LOGO</nav>
+        </div>
+        <div
+          class="w-auto h-auto bg-slate-700 justify-center items-center text-white font-bold"
+        >
+          <nav>NOMBRE</nav>
+        </div>
+        <div
+          class="w-auto h-auto bg-slate-700 justify-end items-end text-white font-bold"
+        >
+          <a href="hola amiguito">MI CUENTA</a>
+        </div>
+      </nav>
+    </header>
+    <div class="container max-w-3xl mx-auto">
+      <div class="w-60 h-60 lg:flex mx-auto mt-6">
         <img
-          class="w-20 h-20"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Circle-icons-document.svg/1024px-Circle-icons-document.svg.png"
-          alt="Documento"
+          src="https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png"
+          alt="Foto de perfil"
         />
-
-        <p class="font-bold">Documentos</p>
       </div>
-      <div>
-        <img
-          class="w-20 h-20"
-          src="http://www.mcconaghiecounseling.com/staging/wp-content/uploads/2019/01/video-youtube-icon-png-1.png"
-          alt="Videos"
-        />
+      <div class="flex justify-center mt-6">
+        <h1 class="font-bold">Profesor Jirafales</h1>
+      </div>
+      <div class="flex justify-center mt-6">
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
+          facilis id. Exercitationem deserunt, vero nihil eius nam labore
+          cupiditate maxime soluta harum voluptatibus, ut sequi autem.
+          Recusandae error neque necessitatibus. Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Aperiam, quod voluptatibus. Maiores
+          voluptate sequi, provident, tempore, recusandae ipsum adipisci amet
+          voluptas animi dolorem nesciunt unde. Animi provident enim perferendis
+          labore.
+        </p>
+      </div>
+      <div class="flex justify-center space-x-16 mt-12">
+        <div class="flex flex-col items-center">
+          <img
+            class="w-20 h-20"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Circle-icons-document.svg/1024px-Circle-icons-document.svg.png"
+            alt="Documento"
+          />
 
-        <p class="font-bold">Videos</p>
+          <p class="font-bold text-cente items-center">Documentos(21)</p>
+        </div>
+        <div>
+          <img
+            class="w-20 h-20"
+            src="http://www.mcconaghiecounseling.com/staging/wp-content/uploads/2019/01/video-youtube-icon-png-1.png"
+            alt="Videos"
+          />
+          <p class="font-bold text-center">Videos(14)</p>
+        </div>
       </div>
     </div>
+    <footer class="bg-slate-900 flex justify-between h-24 mt-32">
+      <div class="p-1">
+        <p class="text-white">Seguinos:</p>
+        <div class="p-1">
+          <a href="https://www.facebook.com/" class="text-white mr-4">
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a href="https://twitter.com/" class="text-white mr-4">
+            <i class="fab fa-twitter fa-lg"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="text-white">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+        </div>
+        <div class="p-1 ml-auto">
+          <p class="text-white">hello@nombre.com.py</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
