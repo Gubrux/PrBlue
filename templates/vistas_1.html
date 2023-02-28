@@ -9,9 +9,21 @@
     <script src="https://cdn.tailwindcss.com"></script> <!--tailwind-->
     <title>Vista Contenido 1</title>
 </head>
-
+<header class="w-auto not-italic">
+    <div class="flex justify-start bg-slate-900">
+      <div class="w-16 ml-4 mt-2">
+        <a href=""><img src="../statics/Paraguay_educa-removebg-preview.png" alt="Imagen logo Red Docente" /></a>
+      </div>
+      <div class="p-5 text-white">
+        <h1>Red | Docente</h1>
+      </div>
+      <div class="place-items-end p-5 ml-auto">
+        <button class="rounded-full bg-white w-16">Perfil</button>
+      </div>
+    </div>
+  </header>
 <body>
-    <header class="bg-black w-20">Encabezado</header>
+    <!--<header class="bg-black w-20">Encabezado</header>-->
 
     <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar"
         type="button"
@@ -24,7 +36,8 @@
             </path>
         </svg>
     </button>
-
+    <!--TERMINAN BOTONES DEL SIDEBAR-->
+    <!--COMIENZA EL SIDEBAR-->
     <aside id="default-sidebar"
         class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
         aria-label="Sidebar">
@@ -133,40 +146,44 @@
             </ul>
         </div>
     </aside>
-
+    <!--TERMINA EL SIDEBAR--> 
+    <!--TARJETAS-->
     <div class="flex flex-wrap p-4 sm:ml-64 justify-center">
-
         <div class="w-96 p-4">
             <img src="https://www.fibaro.com/cl/wp-content/uploads/sites/5/2018/11/mobile_phones.png" alt="">
-
         </div>
         <div class="w-96 p-4">
             <img src="https://www.fibaro.com/cl/wp-content/uploads/sites/5/2018/11/mobile_phones.png" alt="">
-
         </div>
         <div class="w-96 p-4">
             <img src="https://www.fibaro.com/cl/wp-content/uploads/sites/5/2018/11/mobile_phones.png" alt="">
-
         </div>
         <div class="w-96 p-4">
             <img src="https://www.fibaro.com/cl/wp-content/uploads/sites/5/2018/11/mobile_phones.png" alt="">
-
         </div>
-
-
-
     </div>
-
-
+    <!--TERMINA TARJETAS-->
     </div>
     </div>
-
-    <footer>
-        <nav>
-            <!-- footer va al final y puede contener link de navegador-->
-        </nav>
-
+    <!--EMPIEZA FOOTER-->
+    <footer class="bg-slate-900 h-32 absolute static-bottom w-full">
+            <div class="not-italic">
+              <p class="inline-block text-white ml-14">Seguinos en:</p>
+              <div class="inline-block p-8 mr-96">
+                <a href="https://www.facebook.com/" class="text-white mr-4">
+                  <i class="fab fa-facebook fa-lg"></i>
+                </a>
+                <a href="https://twitter.com/" class="text-white mr-4">
+                  <i class="fab fa-twitter fa-lg"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="text-white">
+                  <i class="fab fa-instagram fa-lg"></i>
+                </a>
+              </div>
+              <div class="flex-auto inline-block ml-96"> <p class="text-white">hello@nombre.com.py</p> </div>
+            </div>
     </footer>
+    <!--EMPIEZA FOOTER-->
 </body>
 
 </html>
