@@ -7,80 +7,69 @@
     <link rel="stylesheet" href="/templates/web.css" />
     <title>Inicio de sesion</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style></style>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
   </head>
-  <body class="bg-slate-100">
+  <body class="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen">
     <!-- COMIENZA CONTENIDO DEL HEADER-->
     <header class="w-auto not-italic">
-      <div class="flex justify-start bg-sky-700">
-        <div class="w-10">
-          <img
-            src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcTRPjgTD7OgoAgENLhXQHX-94M-y0ral0B2xSuMZ03jcoRGR0_a3kuvnghPt7gT3Z6qK3GtO4x3ZjiRBPw"
-            alt=""
-          />
+      <div class="flex justify-start bg-slate-900">
+        <div class="w-16 ml-4 mt-2">
+          <img src="../statics/Paraguay_educa-removebg-preview.png" alt="imagen logo Red Docente" />
         </div>
-        <div class="p-5">
-          <h1>RedDocente</h1>
-        </div>
-        <div class="place-items-end p-5 ml-auto">
-          <button class="rounded-full bg-white w-12">Perfil</button>
+        <div class="p-5 text-white">
+          <h1>Red | Docente</h1>
         </div>
       </div>
     </header>
     <!-- TERMINA EL CONTENIDO DEL HEADER-->
     <!-- INPUTS -->
-    <div class="grid grid-cols-2">
-      <div class="container mr-12 ml-0.5 mt-10 pr-1">
-        <div class="bg-blue-400 p-40 w-120 h-96 mt-12 ml-12 rounded-lg">
-          <div class="not-italic">
-            <h1 class="text-7xl">Bienvenido</h1>
-            <p class="text-center text-4xl">A tu comunidad!</p>
-          </div>
+    <div
+      class="h-full bg-[url('https://cdn.pixabay.com/photo/2018/07/14/11/32/network-3537400_1280.png')] bg-center bg-cover"
+    >
+      <div class="not-italic text-white font-bold">
+        <!-- <img
+          src="https://cdn.pixabay.com/photo/2018/07/14/11/32/network-3537400_1280.png"
+          class="bg-blend-screen"
+        /> -->
+        <h1 class="text-7xl text-center pt-40">¡Bienvenido</h1>
+        <p class="text-center text-4xl">A tu comunidad!</p>
+      </div>
+      <div class="text-center not-italic text-xl mt-16">
+        <span
+          ><input
+            type="text"
+            id="email"
+            placeholder="Correo electrónico"
+            class="text-center rounded-md bg-slate-200 text-slate-500 w-64"
+        /></span>
+        <div class="mt-5">
+          <span
+            ><input
+              type="text"
+              id="password"
+              placeholder="Contraseña"
+              class="resize text-center rounded-md bg-slate-200 text-slate-500 w-64"
+          /></span>
         </div>
       </div>
-      <div class="container mr-12 ml-0.5 mt-10 pl-1">
-        <div class="bg-blue-200 p-40 w-120 h-96 -lg mt-12 mr-12 rounded-lg">
-          <div class="text-center not-italic text-xl">
-            <div>
-              <span
-                ><input
-                  type="text"
-                  id="email"
-                  placeholder="Correo electrónico"
-                  class="text-center rounded-md border-2 border-solid border-grey bg-sky-700 placeholder-white text-white w-64"
-              /></span>
-            </div>
-            <div class="mt-5">
-              <span
-                ><input
-                  type="text"
-                  id="password"
-                  placeholder="Contraseña"
-                  class="resize text-center rounded-md border-2 border-solid border-grey bg-sky-700 placeholder-white text-white w-64"
-              /></span>
-            </div>
-          </div>
-          <!-- BOTONES DE LOGIN -->
-          <div class="text-center mt-5 not-italic">
-            <button
-              class="bottom-6 rounded-full p-2 font-medium text-xl cursor-pointer transition ease-in-out delay-150 bg-[#cbd5e1] hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 duration-300"
-            >
-              INGRE
-            </button>
-          </div>
-        </div>
+      <!-- BOTONES DE LOGIN -->
+      <div class="text-center mt-5 not-italic">
+        <button
+          class="bottom-6 rounded-full p-2 font-medium text-xl cursor-pointer transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-yellow-500 duration-300"
+        >
+          Ingresar
+        </button>
       </div>
     </div>
     <!-- COMIENZA EL FOOTER -->
-    <footer
-      class="bg-slate-900 flex justify-between h-24 absolute bottom-0 w-full"
-    >
-      <div class="p-1 not-italic">
-        <p class="text-white">Seguinos:</p>
-        <div class="p-1">
+    <footer class="bg-slate-900 h-32 absolute static-bottom w-full">
+      <div class="not-italic">
+        <p class="inline-block text-white ml-14">Seguinos en:</p>
+        <div class="inline-block p-8 mr-96">
           <a href="https://www.facebook.com/" class="text-white mr-4">
             <i class="fab fa-facebook fa-lg"></i>
           </a>
@@ -91,7 +80,7 @@
             <i class="fab fa-instagram fa-lg"></i>
           </a>
         </div>
-        <div class="p-1 ml-auto">
+        <div class="flex-auto inline-block ml-96">
           <p class="text-white">hello@nombre.com.py</p>
         </div>
       </div>

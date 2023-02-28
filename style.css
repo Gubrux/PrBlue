@@ -27,3 +27,10 @@ myheader {
 mydiv {
     background-color: beige;
 }
+#navbar {
+    background-image: url('../statics/Paraguay_educa-removebg-preview.png')!important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
