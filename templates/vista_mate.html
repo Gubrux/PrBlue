@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!--css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--tailwind-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <title>Vista Matemáticas</title>
+    <script src="/sidebar_mate.js" defer></script>
+  </head>
+  <body>
+    <header class="absolute w-screen not-italic">
+      <div class="flex justify-start bg-slate-900">
+        <div class="w-16 ml-4 mt-2">
+          <a href=""
+            ><img
+              src="http://imgfz.com/i/orlkZjV.png"
+              alt="Imagen logo Red Docente"
+          /></a>
+        </div>
+        <div class="p-5 text-white">
+          <h1>Red | Docente</h1>
+        </div>
+        <div class="place-items-end p-5 ml-auto">
+          <button class="rounded-full bg-white w-16">Perfil</button>
+        </div>
+      </div>
+    </header>
+    <!--TERMINAN BOTONES DEL SIDEBAR-->
+    <!--COMIENZA EL SIDEBAR-->
+    <div class="app">
+      <div class="menu-toggle">
+        <div class="hamburger">
+          <span></span>
+        </div>
+      </div>
+
+      <aside class="sidebar pt-28">
+        <p class="text-slate-400 text-2xl">Materiales</p>
+
+        <nav class="menu pt-4">
+          <a href="#" class="menu-item" onclick="mostrarContenido('aportes')"
+            >Como utilizar el método Singapour</a
+          >
+          <a href="#" class="menu-item" onclick="mostrarContenido('vistas')"
+            >Materiales didacticos "Suma"</a
+          >
+          <a href="#" class="menu-item" onclick="mostrarContenido('registro')"
+            >Materiales didacticos "Resta"</a
+          >
+          <a href="#" class="menu-item" onclick="mostrarContenido('contacto')"
+            >Materiales didacticos "Multiplicaciiones y Divisiones"</a
+          >
+        </nav>
+      </aside>
+      <h1>Materiales Didacticos</h1>
+      <div
+        id="contenido"
+        class="flex flex-wrap pr-4 pl-28 justify-center place-content-center overflow-auto"
+      ></div>
+      <div
+      id="contenido1"
+      class="flex flex-wrap pl-4 pr-28 justify-center place-content-center overflow-auto"
+      ></div>
+    </div>
+
+    <!--EMPIEZA FOOTER-->
+    <footer class="bg-slate-900 h-32 absolute static-bottom w-full">
+      <div class="not-italic">
+        <p class="inline-block text-white ml-14">Seguinos en:</p>
+        <div class="inline-block p-8 mr-96">
+          <a href="https://www.facebook.com/" class="text-white mr-4">
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a href="https://twitter.com/" class="text-white mr-4">
+            <i class="fab fa-twitter fa-lg"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="text-white">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+        </div>
+        <div class="flex-auto inline-block ml-96">
+          <p class="text-white">hello@nombre.com.py</p>
+        </div>
+      </div>
+    </footer>
+    <!--EMPIEZA FOOTER-->
+  </body>
+</html>
