@@ -9,66 +9,94 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
-    <link href="http://imgfz.com/i/cA3GiwS.png" rel="stylesheet">
-    <title>Mis Aportes</title>
+    <title>Document</title>
   </head>
   <body class="bg-slate-100">
     <header class="w-auto not-italic">
       <div class="flex justify-start bg-slate-900">
         <div class="w-16 ml-4 mt-2">
-          <a href=""><img src="../statics/Paraguay_educa-removebg-preview.png" alt="" /></a>
+          <a href=""
+            ><img
+              src="../statics/Paraguay_educa-removebg-preview.png"
+              alt="Imagen logo Red Docente"
+          /></a>
         </div>
-        <div class="p-5 text-white">
+        <div class="p-5 text-slate-200">
           <h1>Red | Docente</h1>
         </div>
         <div class="place-items-end p-5 ml-auto">
-          <button class="rounded-full bg-white w-16">Perfil</button>
+          <button class="rounded-full bg-slate-200 text-slate-900 w-16">Perfil</button>
         </div>
       </div>
     </header>
-    <div class="container max-w-3xl mx-auto">
-      <div class="w-60 h-60 lg:flex mx-auto mt-6">
-        <img
-          src="https://www.shareicon.net/data/512x512/2017/01/06/868320_people_512x512.png"
-          alt="Foto de perfil"
-        />
+    <div class="flex justify-between bg-slate-100">
+    <!-- div del quilombo -->
+    <div class="flex-1 content-center overflow-auto">
+    <div class="mt-12 container max-w-4xl mx-auto text-center">
+      <div class="">
+      <h1 class="font-bold text-4xl text-slate-900 ">Agregue un nuevo aporte!</h1>
       </div>
-      <div class="flex justify-center mt-6">
-        <h1 class="font-bold">Profesor Jirafales</h1>
-      </div>
-      <div class="flex justify-center mt-6">
-        <p class="text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-          facilis id. Exercitationem deserunt, vero nihil eius nam labore
-          cupiditate maxime soluta harum voluptatibus, ut sequi autem.
-          Recusandae error neque necessitatibus. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Aperiam, quod voluptatibus. Maiores
-          voluptate sequi, provident, tempore, recusandae ipsum adipisci amet
-          voluptas animi dolorem nesciunt unde. Animi provident enim perferendis
-          labore.
-        </p>
-      </div>
-      <div class="flex justify-center space-x-16 mt-12">
-        <div class="flex flex-col items-center">
-          <img
-            class="w-20 h-20"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Circle-icons-document.svg/1024px-Circle-icons-document.svg.png"
-            alt="Documento"
-          />
+      <form
+        class="p-4 m-4"
+        method="post"
+        action="/aportes"
+        enctype="multipart/form-data"
+      >
+        <input type="file" id="fileInput" name="test" />
+        <button type="submit" class="inline-flex items-center rounded-full border border-transparent bg-slate-900 px-3 py-1.5 text-slate-200 shadow-sm hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-900 focus:ring-offset-2 font-medium">Cargar archivo</button>
+      </form>
 
-          <p class="font-bold text-cente items-center">Documentos(21)</p>
-        </div>
-        <div>
-          <img
-            class="w-20 h-20"
-            src="http://www.mcconaghiecounseling.com/staging/wp-content/uploads/2019/01/video-youtube-icon-png-1.png"
-            alt="Videos"
-          />
-          <p class="font-bold text-center">Videos(14)</p>
-        </div>
+      <div class="w-6/12 h-12 mx-auto">
+        
+        {% for link in lista_de_urls %}
+        <li class="border-8 border-slate-900 m-4 p-4">
+          <a href="{{ link.url }}">MIS APORTES</a>
+          <video src="{{ link.url }}" controls class="w-full"> </video>
+        </li>
+        {% endfor %}
       </div>
     </div>
-    <footer class="bg-slate-900 flex justify-between h-24 mt-32">
+  </div>
+    <!-- div aside -->
+  <div class="flex-none w-48">
+    <aside class="flex flex-row-reverse">
+      <div class="bg-gradient-to-r from-emerald-200 to-cyan-600 h-auto">
+        <div class="w-44 h-44 lg:flex mx-auto mt-6">
+          <img
+            src="https://img.icons8.com/cotton/2x/gender-neutral-user.png"
+            alt="Foto de perfil"
+          />
+        </div>
+        <div class="flex justify-center mt-6">
+          <h1 class="font-bold overline text-2xl text-slate-900">Profesor Jirafales</h1>
+        </div>
+        <div class="flex justify-center mt-6">
+          <p class="text-center text-lg text-slate-900">Profesor de primaria</p>
+        </div>
+        <div class="flex justify-center space-x-4 mt-12 mr-4 ml-4 mb-64">
+          <div class="flex flex-col items-center">
+            <img
+              class="w-20 h-20"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Circle-icons-document.svg/1024px-Circle-icons-document.svg.png"
+              alt="Documento"
+            />
+
+            <p class="font-semibold text-center items-center text-slate-900">Documentos(21)</p>
+          </div>
+          <div>
+            <img
+              class="w-20 h-20"
+              src="https://kurator.com/wp-content/uploads/2018/07/video-camera-png-icon-5.png"
+              alt="Videos"
+            />
+            <p class="font-semibold text-center items-center text-slate-900">Videos(14)</p>
+          </div>
+        </div>
+    </aside>
+  </div>
+</div>
+
+    <footer class="bg-slate-900 flex justify-between h-24">
       <div class="not-italic">
         <p class="inline-block text-white ml-14">Seguinos en:</p>
         <div class="inline-block p-8 mr-96">
@@ -83,9 +111,9 @@
           </a>
         </div>
         <div class="flex-auto inline-block ml-96">
-          <p class="text-white">hello@nombre.com.py</p>
+          <p class="text-white">red_docente@penguin.com.py</p>
         </div>
       </div>
-      </footer>
+    </footer>
   </body>
 </html>

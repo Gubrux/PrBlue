@@ -13,12 +13,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
   </head>
-  <body class="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen">
+  <body class="bg-gradient-to-r from-emerald-200 to-cyan-600 min-h-screen">
     <!-- COMIENZA CONTENIDO DEL HEADER-->
     <header class="w-auto not-italic">
       <div class="flex justify-start bg-slate-900">
         <div class="w-16 ml-4 mt-2">
-          <img src="../statics/Paraguay_educa-removebg-preview.png" alt="imagen logo Red Docente" />
+          <img
+            src="../statics/Paraguay_educa-removebg-preview.png"
+            alt="imagen logo Red Docente"
+          />
         </div>
         <div class="p-5 text-white">
           <h1>Red | Docente</h1>
@@ -28,7 +31,12 @@
     <!-- TERMINA EL CONTENIDO DEL HEADER-->
     <!-- INPUTS -->
     <div
-      class="h-full bg-[url('https://cdn.pixabay.com/photo/2018/07/14/11/32/network-3537400_1280.png')] bg-center bg-cover"
+      class="h-screen bg-center bg-no-repeat bg-cover"
+      style="
+        background-image: url(../statics/pelotalilaclaro.webp);
+        background-size: 100%;
+        background-position: center -80px; ;
+      "
     >
       <div class="not-italic text-white font-bold">
         <!-- <img
@@ -38,11 +46,10 @@
         <h1 class="text-7xl text-center pt-40">¡Bienvenido</h1>
         <p class="text-center text-4xl">A tu comunidad!</p>
       </div>
-      <form method="POST">
       <div class="text-center not-italic text-xl mt-16">
         <span
           ><input
-            type="text" name="email"
+            type="text"
             id="email"
             placeholder="Correo electrónico"
             class="text-center rounded-md bg-slate-200 text-slate-500 w-64"
@@ -51,7 +58,6 @@
           <span
             ><input
               type="text"
-              name='password'
               id="password"
               placeholder="Contraseña"
               class="resize text-center rounded-md bg-slate-200 text-slate-500 w-64"
@@ -61,14 +67,12 @@
       <!-- BOTONES DE LOGIN -->
       <div class="text-center mt-5 not-italic">
         <button
-        type='submit'
           class="bottom-6 rounded-full p-2 font-medium text-xl cursor-pointer transition ease-in-out delay-150 bg-white hover:-translate-y-1 hover:scale-110 hover:bg-yellow-500 duration-300"
         >
           Ingresar
         </button>
       </div>
     </div>
-  </form>
     <!-- COMIENZA EL FOOTER -->
     <footer class="bg-slate-900 h-32 absolute static-bottom w-full">
       <div class="not-italic">
@@ -85,7 +89,7 @@
           </a>
         </div>
         <div class="flex-auto inline-block ml-96">
-          <p class="text-white">hello@nombre.com.py</p>
+          <p class="text-white">red_docente@penguin.com.py</p>
         </div>
       </div>
     </footer>
